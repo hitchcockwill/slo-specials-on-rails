@@ -27,9 +27,17 @@ class Api::V1::DealsController < Api::ApiController
 
   # POST /deals
   # POST /deals.json
+  # Required: venue_id, title, kind,
   def create
-    @deal = Deal.new(params[:deal])
-    @deal.save
+    venue = Venue.find(params[:venue_id])
+    if venue
+      @deal = venue.deals.new(
+        :title => params[:title],
+        :kind => params[:kind],
+        :price => params[:price]
+      )
+      @deal.save
+    end
   end
 
   # PUT /deals/1

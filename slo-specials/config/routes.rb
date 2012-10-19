@@ -2,8 +2,6 @@ SloSpecials::Application.routes.draw do
 
   namespace :api do
     namespace :v1, :defaults => { :format => 'json' } do
-      match "/venues/:id" => "venues#show", :via => :get
-      match "/venues" => "venues#index"
       resources :deals, :venues
     end
   end

@@ -9,7 +9,7 @@ class Deal
   validates :kind, :presence => :true
   validates :price, :presence => :true
 
-  attr_accessible :title, :kind, :price
+  attr_accessible :title, :kind, :price, :venue_id
 
   belongs_to :venue
 end

@@ -27,7 +27,9 @@ class Api::V1::VenuesController < Api::ApiController
   # POST /venues
   # POST /venues.json
   def create
-    @venue = Venue.new(params[:venue])
+    @venue = Venue.new(
+      :name => params[:name]
+    )
     @venue.save
   end
 
