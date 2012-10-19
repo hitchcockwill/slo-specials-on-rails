@@ -16,5 +16,8 @@
 //= require backbone
 //= require backbone_rails_sync
 //= require backbone_datalink
+//= require lib/backbone.marionette
+//= require lib/backbone-relational
+//= require_tree ./lib
 //= require backbone/slo_specials
 //= require_tree .
