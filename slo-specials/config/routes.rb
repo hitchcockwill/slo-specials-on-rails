@@ -1,4 +1,6 @@
 SloSpecials::Application.routes.draw do
+  resources :deals
+
   resources :venues
 
   # The priority is based upon order of creation:
