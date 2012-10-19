@@ -1,11 +1,12 @@
 class Venue
   include Mongoid::Document
-  
+
   field :name, type: String
 
   validates :name, :presence => :true
+  validates :venue, :presence => :true
 
-  attributes_accessible :name
+  attr_accessible :name
 
   has_many :deals
 end

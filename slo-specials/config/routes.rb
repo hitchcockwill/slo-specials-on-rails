@@ -1,7 +1,14 @@
 SloSpecials::Application.routes.draw do
-  resources :deals
 
-  resources :venues
+  namespace :api do
+    namespace :v1, :defaults => { :format => 'json' } do
+      match "/venues/:id" => "venues#show", :via => :get
+      match "/venues" => "venues#index"
+      resources :deals, :venues
+    end
+  end
+
+  resources :deals, :venues
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
