@@ -1,0 +1,42 @@
+/* Contact Page styles */
+
+#contact {
+  .box1 .left {
+    width: 300px;
+    margin-right: 60px;
+  }
+
+  form {
+    input, textarea {
+      display: block;
+      padding: 10px 12px;
+      width: 200px;
+      @include border-radius(5px);
+      color: #aaa;
+      border: 1px solid #ccc;
+      margin: 0 0 12px;
+      font-family: georgia, serif;
+    }
+    textarea {
+      width: 360px;
+    }
+    #submit {
+      border-color: #333333;
+      background-color: #333333;
+      background: url("../img/box2bg.jpg") left top repeat-x transparent;
+      width: 384px;
+    }
+    #submit:active {
+      @include box-shadow(0 0 2px 3px $bright-blue);
+    }
+  }
+  
+  .contactInfo {
+    width: 294px;
+    margin-right: 36px;
+  }
+
+  .form {
+    padding: 40px 70px;
+  }
+}

@@ -1,0 +1,117 @@
+/* Footer styles */
+
+footer {
+  margin: 30px 0;
+  &.box2 {
+    @include border-radius(0);
+  }
+}
+
+#footerwrap {
+  padding: 12px;
+  > ul {
+    margin: 0;
+    padding: 0;
+    li.first {
+      width: 94px;
+    }
+    > li {
+      width: 154px;
+      margin: 10px 0 -6px 14px;
+    }
+    ul {
+      padding: 0 0 0 8px;
+      margin: 0 0 10px;
+      li {
+        margin-bottom: 6px;
+      }
+      a {
+        text-decoration: none;
+        color: $off-white;
+        font-size: 12px;
+      }
+    }
+  }
+  h3 {
+    margin: 0 0 4px;
+    &.special a {
+      font-size: 20px;
+      color: $bright-green;
+      font-family: "Arvo", sans-serif;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+  .social {
+    width: 235px;
+    height: 224px;
+    margin: 10px 0 0 0;
+    background: url("../img/leftDiv.jpg") repeat-y scroll left top transparent;
+    padding: 0 14px 0 28px;
+
+    > div {
+      margin: 12px 0;
+    }
+    div.facebook {
+      margin-bottom: 22px;
+    }
+    h4 {
+      color: $off-white;
+      font-size: 15px;
+      font-style: italic;
+      margin: 2px 8px 0;
+      font-family: georgia, serif;
+    }
+    .twitter h4 {
+      margin-right: 23px;
+    }
+    .twitter-follow-button {
+      margin: 10px 8px 0;
+    }
+    div.fb-like {
+      width: 110px;
+    }
+    li a {
+      text-decoration: none;
+      color: $off-white;
+      font-size: 12px;
+    }
+  }
+
+  #footerContact {
+    background: url("../img/leftDiv.jpg") repeat-y left top transparent;
+    padding: 40px 26px 0;
+    margin: 10px 0 0 0;
+    height: 184px;
+    width: 360px;
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+      color: $bright-blue;
+      font-weight: 700;
+      margin: 2px 0 0;
+    }
+    a {
+      text-decoration: none;
+      color: $off-white;
+      font-family: georgia, serif;
+      font-style: italic;
+      font-size: 15px;
+      margin-top: 8px;
+      &:hover {
+        color: $bright-green;
+        @include transition-property(color);
+        @include transition-duration(.2s);
+      }
+    }
+  }
+  .legal {
+    font-size: 11px;
+    color: $off-white;
+  }
+}
+
+#footerwrap > ul ul a:hover, #footerwrap > ul > li >h3 a:hover {
+  text-shadow: 1px 1px 0 black;
+}

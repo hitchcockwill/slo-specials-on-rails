@@ -1,0 +1,81 @@
+%ul.fL
+  %li.first.fL
+    %h3.special
+      %a{ :href => "/food" }
+        Food
+    %ul
+      %li
+        %a{ :href => "/food" }
+          Today&acute;s Deals
+      %li
+        %a{ :href => "food/all" }
+          See all deals
+    %h3
+      %a{:href => "/drinks"}
+        Drinks
+    %ul
+      %li
+        %a{:href => "/drinks"}
+          Today&acute;s Deals
+      %li
+        %a{:href => "/drinks/all"}
+          See all deals
+  %li.fL
+    %h3.special
+      %a{:href => "/deals-by-day"}
+        Deals by Day
+    %ul
+      %li
+        %a{:href => "/deals-by-day"}
+          Today&acute; Deals
+      %li
+        %a{:href => "/deals-by-day/sunday"}
+          Sunday
+      %li
+        %a{:href => "/deals-by-day/monday"}
+          Monday
+      %li
+        %a{:href => "/deals-by-day/tuesday"}
+          Tuesday
+      %li
+        %a{:href => "/deals-by-day/wednesday"}
+          Wednesday
+      %li
+        %a{:href => "/deals-by-day/thursday"}
+          Thursday
+      %li
+        %a{:href => "/deals-by-day/friday"}
+          Friday
+      %li
+        %a{:href => "/deals-by-day/saturday"}
+          Saturday
+.social.fL
+  %h3.special
+    %a
+      Share SLO Specials
+  .twitter.clearfix
+    %h4.fL on Twitter
+    %a{:href => "/"}
+      Twitter links go here
+  .facebook.clearfix
+    %h4.fL on Facebook
+    %a{:href => "/"}
+      Facebook links here
+  %h3.special
+    %a
+      Follow us on Twitter
+  %a{:href => "/"}
+    more twitter stuff
+#footerContact.fL
+  %h2 
+    Want to tell us about more deals?
+    %br Like what we are doing here?
+    %br Interested in getting ad space?
+    %br Want to learn more?
+  %a{:href => "/contact", :class => "fR"}
+    Get in touch>>
+.clearfix
+%p{:class => "legal fL"}
+  Copyright 2011 all rights reserved | slospecials.com
+%p{:class => "legal fR"}
+  San Luis Obispo, Ca 93405 | slospecials@gmail.com
