@@ -16,8 +16,9 @@
 //= require backbone
 //= require backbone_rails_sync
 //= require backbone_datalink
+//= require hamlcoffee
 //= require lib/backbone.marionette
 //= require lib/backbone-relational
-//= require_tree ./lib
+//= require_tree ./templates
 //= require backbone/slo_specials
 //= require_tree .
