@@ -1,4 +1,5 @@
-/*  Header styles */
+
+//  Header styles
 
 #sitestripe {
   background: url("/assets/./box2bg.jpg") repeat scroll 0 0 #BBBBBB;
@@ -7,20 +8,24 @@
   width: 100%;
 }
 
-header {margin-top:36px;position:relative;}
+header {
+  margin-top: 36px;
+  position: relative;
+}
+
 header img {
-  float:left; 
-  width:176px; 
+  float: left; 
+  width: 176px; 
   height: 175px;
-  position:relative;
+  position: relative;
   z-index: 5;
-  border-radius: 80px;
+  @include border-radius(80px);
 }
 
 header h2 {
-color: #92C202;
-float: left;
-margin:15px 0 10px 8px;
+  color: #92C202;
+  float: left;
+  margin: 15px 0 10px 8px;
 }
 
 /*  Nav styles */
@@ -37,15 +42,15 @@ nav ul {
   }
   
   nav ul.rightnav {
-    float:right;
+    float: right;
     margin-top: 4px;
-    width:220px;
+    width: 220px;
   }
 
 nav ul li {
-  display:inline;
-  width:106px;
-  float:right;
+  display: inline;
+  width: 106px;
+  float: right;
 }
 
 
@@ -59,14 +64,14 @@ nav ul.box1 li {
   }
   
 nav ul a {
-  display:block;
-  text-decoration:none;
+  display: block;
+  text-decoration: none;
   color: #439ec8;
-  font-family:"Arvo", helvetica, arial, sans-serif;
+  font-family: "Arvo", helvetica, arial, sans-serif;
   font-size: 20px;
   line-height: 19px;
   padding: 25px 10px 0;
-  text-align:right;
+  text-align: right;
 }
   nav ul a:visited {color: #439ec8;}
   nav ul a:hover, .cta:hover {
@@ -78,7 +83,7 @@ nav ul a {
     transition: color .2s linear;
   }
   nav ul a.double {padding-top: 17px;}
-  nav ul a.active {color:#92c202;}
+  nav ul a.active {color: #92c202;}
   
   /* subnav styles */
   
@@ -101,6 +106,6 @@ nav ul a {
   nav ul.subnav li a {
     font-size: 16px;
     padding: 6px 12px;
-    text-align:left;
+    text-align: left;
     text-transform: lowercase;
   }

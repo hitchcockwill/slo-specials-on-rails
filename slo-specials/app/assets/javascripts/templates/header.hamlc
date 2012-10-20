@@ -3,7 +3,8 @@
     %img{ :src => "/assets/./ssLogo.png", :alt => "S.L.O. Specials"}
   %h2
     You are living in San Luis Obispo on a budget.
-    %br Here are all the deals you should know about.
+    %br
+      Here are all the deals you should know about.
   %nav
     %ul{ :class => "box1 mainnav" }
       %li{ :class => "last" }
@@ -18,7 +19,8 @@
       %li
         %a{ :href => "/deals-by-day" }
           deals
-          %br by day
+          %br
+            by day
     %ul{ :class => "rightnav" }
       %li
         %a{ :href => "/about"}

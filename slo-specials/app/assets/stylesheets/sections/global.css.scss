@@ -8,10 +8,22 @@ $light-gray: #d4d2d2;
 $off-white: #f1fffe;
 $dark-red: #c25130;
 
+@font-face {
+  font-family: Arvo;
+  src: url('/assets/./Arvo-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Arvo;
+  src: url('/assets/./Arvo-Bold.ttf');
+  font-weight: bold;
+}
+
 body {
-    background: url("/assets/./bodybg.jpg") repeat transparent;
-    font-family: georgia, times, serif;
-    color: #444444;
+  background: url("/assets/./bodybg.jpg") repeat transparent;
+  font-family: georgia, times, serif;
+  color: #444444;
 }
 
 p {
@@ -20,17 +32,17 @@ p {
   line-height:23px;
 }
 
-header, #main, #footerwrap {
+header, #content, #footerwrap {
   width: 968px;
   padding: 0 24px;
   margin:0 auto;
 }
 
 body p a {
-  color: #439EC8;
+  color: $bright-blue;
   font-style: italic;
+  &:visited { color: $bright-blue; }
+  &:hover { color: $bright-green; }
 }
-body p a:visited {color:#439EC8;}
-body p a:hover {color: #92c202;}
 
 h1, h2, h3, h4, h5, h6 {font-family: "Arvo", helvetica, arial, sans-serif; font-weight: 400;}

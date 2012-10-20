@@ -1,0 +1,719 @@
+
+
+.box1 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 white, inset 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white, inset 0 1px 0 white;
+  box-shadow: 0 1px 0 white, inset 0 1px 0 white;
+  background: url("../img/box1bg.png") repeat #bbb;
+  border: 1px solid #d4d2d2;
+  background-image: linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+  background-image: -o-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+  background-image: -moz-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+  background-image: -webkit-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+  background-image: -ms-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.04, rgba(178, 178, 178, 0.1)),
+    color-stop(0.36, rgba(255, 255, 255, 0.4))
+  ), url("../img/box1bg.png");
+}
+
+#main .box1 {
+  padding: 24px 54px;
+  margin: 12px 0 0;
+}
+
+.box2 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 white, inset 0 1px 0 #999;
+  -moz-box-shadow: 0 1px 0 white, inset 0 1px 0 #999;
+  box-shadow: 0 1px 0 white, inset 0 1px 0 #999;
+  background: url("../img/box2bg.jpg") repeat #bbb;
+  border: 1px solid #383735;
+  background-image: linear-gradient(center bottom , rgba(0, 0, 0, 0.25) 4%, rgba(80, 80, 80, 0) 86%), url("../img/box2bg.jpg");
+  background-image: -o-linear-gradient(center bottom , rgba(0, 0, 0, 0.25) 4%, rgba(80, 80, 80, 0) 86%), url("../img/box2bg.jpg");
+  background-image: -moz-linear-gradient(center bottom , rgba(0, 0, 0, 0.25) 4%, rgba(80, 80, 80, 0) 86%), url("../img/box2bg.jpg");
+  background-image: -webkit-linear-gradient(center bottom , rgba(0, 0, 0, 0.25) 4%, rgba(80, 80, 80, 0) 86%), url("../img/box2bg.jpg");
+  background-image: -ms-linear-gradient(center bottom , rgba(0, 0, 0, 0.25) 4%, rgba(80, 80, 80, 0) 86%), url("../img/box2bg.jpg");
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.04, rgba(0, 0, 0, 0.25)),
+    color-stop(0.86, rgba(80, 80, 80, 0))
+  ), url("../img/box2bg.jpg");
+}
+
+.cta2 {
+  text-decoration: none;
+  color: #383735;
+  font-family: georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+  float: right;
+  margin-top: -22px;
+}
+
+  a.cta2:hover {
+    color: #92c202;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    -ms-transition: color .2s linear;
+    transition: color .2s linear;
+}
+  a.cta2:visited {
+    color: #383735;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    -ms-transition: color .2s linear;
+    transition: color .2s linear;
+    }
+
+.box1.select1 {
+  border-radius: 3px 3px 3px 3px;
+  font-family: georgia,serif;
+  font-style: italic;
+  padding: 6px 12px !important;
+  width: 160px;
+  background-color: white;
+}
+
+.box1.select1 option {
+  margin: 6px;
+  padding: 0 0 0 12px;
+}
+
+
+
+
+
+  
+/* Deal Tabs */
+
+.dealList, .placesList {
+   padding: 0;
+   position: relative;
+}
+
+.dealList li, .placesList li {list-style: none;}
+
+.dealList > li, .placesList > li {
+  overflow: hidden;
+  float: left;
+}
+
+.placesList ul {padding: 0;}
+
+.dealTab {
+  display: block;
+  float: left;
+  width: 202px;
+  height: 232px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  color: #f1fffe;
+}
+
+.dealTab a {color: #f1fffe; text-decoration: none;}
+.dealTab a:focus {outline: none;}
+.dealTab .dealStripe {
+  background: url("../img/bodybg.jpg") repeat-x scroll left top transparent;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  height: 10px;
+  margin: 0;
+  width: 100%;
+}
+  .dealTab .dealStripe.food {
+    background-image: url("../img/bluestripes.jpg");
+  }
+  .dealTab .dealStripe.drink {
+    background-image: url("../img/greenstripes.jpg");
+  }
+  
+.dealTab .dealData {
+    padding: 14px; 
+}
+
+    .dealTab.last {
+      margin-right: 0;
+    }
+
+  .dealTab h4, .dealTab h3 {
+    font-weight: 700;
+  }
+  
+  .dealTab h4 {
+    font-size: 90px;
+    height: 50px;
+    font-style: normal;
+    line-height: 30px;
+    margin: 16px 0 0;
+    padding: 0 0 10px;
+  }
+  .dealTab h4 span {
+    font-size: 40px;
+    position: relative;
+    top: -36px;
+    margin: 0;
+    text-shadow: inset 0 1px 0 #333, 0 1px 0 white;
+  }
+  
+  .dealTab h4 span.dollars {
+    position: static;
+    font-size: 90px;
+    margin: 16px 0 0;
+    
+  }
+  
+  .dealTab h4 span.off {
+    font-size: 25px;
+    left: -34px;
+    top: -2px;
+  }
+  
+  .dealTab h4 span.for {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 8px;
+  }
+  
+  .dealTab h4 span.for2 {
+    font-size: 60px;
+    top: -24px;
+  }
+  
+  .dealTab h4 span.off.offFix {
+    left: -38px;
+  }
+  
+  .dealTab h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0;
+    padding: 26px 0;
+    line-height: 19px;
+  }
+  
+  .dealTab h5 {
+    margin: 8px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+  
+  .dealTab h6 {
+    margin: 4px 0 0;
+    font-size: 13px;
+    text-transform: lowercase;
+  }
+  
+  .dealTab h6 span {
+    font-weight: 700;
+    margin-left: 4px;
+  }
+  
+  .dealTab .row {
+    background: url("../img/horDiv.jpg") repeat-x left bottom transparent;
+  }
+  
+  .listWrap {
+    overflow: hidden;
+    width: 100%;
+    min-height: 270px;
+  }
+  
+  
+  /*Places tabs */
+  
+  .placesTab {
+    height: 114px;
+  }
+  
+  .placesTab .dealData { padding: 0 14px;}
+  .placesTab h3 {
+    font-size: 20px;
+    padding: 17px 0;
+  }
+  .placesTab h5 {
+    font-size: 14px;
+    margin: 4px 0 0;
+  }
+  .placesTab h6 {
+    font-weight: 700;
+    color: #92c202;
+    text-transform: uppercase;
+    margin-top: 2px;
+    font-size: 16px;
+  }
+  .placesTab .dealStripe {background-image: url('../img/bodybg.jpg');}
+  .placesTab h6.noDeals {color: #c25130;}
+      /* jQuery UI Slider */
+      
+      .scroll-bar-wrap {margin: 14px 0 0; border-radius: 5px; padding-left: 2px;}
+      .scroll-bar-wrap .ui-slider { border: 0; height: 24px; margin: 0 auto;  }
+      .scroll-bar-wrap .ui-handle-helper-parent { position: relative; width: 100%; height: 100%; margin: 0 auto; }
+      #main .scroll-bar-wrap .ui-slider-handle { top: .2em; height: 16px; }
+      .scroll-bar-wrap .ui-slider-handle .ui-icon { margin: -8px auto 0; position: relative; top: 50%; }
+      .ui-widget-content {background: transparent;}
+  
+
+/* Main content */
+
+#main h2 {
+  clear: both;
+  font-size: 26px;
+  color: #439ec8;
+  margin: 0;
+}
+
+/* Footer styles */
+
+footer {
+ margin: 30px 0;
+}
+
+  footer.box2 {border-radius: 0;}
+
+#footerwrap {padding: 12px;}
+#footerwrap > ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#footerwrap > ul li.first {width: 94px;}
+
+#footerwrap > ul h3 {margin: 0 0 4px;}
+#footerwrap > ul > li > h3 a, #footerwrap .social > h3{
+  font-size: 20px;
+  color: #92c202;
+  font-family: "Arvo", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0;
+}
+
+#footerwrap > ul > li {float: left; width: 154px; margin: 10px 0 -6px 14px;}
+
+#footerwrap > ul ul {padding: 0 0 0 8px; margin: 0 0 10px;}
+#footerwrap > ul ul li {margin-bottom: 6px;}
+#footerwrap > ul ul a, #footerwrap .social li a {
+  text-decoration: none;
+  color: #f1fffe;
+  font-size: 12px;
+}  
+#footerwrap .social {
+  width: 248px;
+  height: 224px;
+  margin: 10px 0 0 0;
+  float: left;
+  background: url("../img/leftDiv.jpg") repeat-y scroll left top transparent;
+  padding: 0 14px 0 28px;
+}
+  
+  #footerwrap .social > div {margin: 12px 0;}
+  #footerwrap .social div.facebook {margin-bottom: 22px;}
+  #footerwrap .social h4 {
+    color: #F1FFFE;
+    float: left;
+    font-size: 15px;
+    font-style: italic;
+    margin: 2px 8px 0;
+    font-family: georgia, serif;
+  }
+    #footerwrap .twitter h4 {margin-right: 23px;}
+  
+  #footerwrap div.fb-like {width: 110px;}
+  #footerwrap .twitter-follow-button {margin: 10px 8px 0;}
+
+#footerwrap > ul ul a:hover, #footerwrap > ul > li >h3 a:hover {
+  text-shadow: 1px 1px 0 black;
+}
+
+#footerwrap #footerContact {
+  float: left;
+  background: url("../img/leftDiv.jpg") repeat-y left top transparent;
+  padding: 40px 26px 0;
+  margin: 10px 0 0 0;
+  height: 184px;
+}
+
+#footerwrap #footerContact h2 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #439ec8;
+  font-weight: 700;
+  margin: 2px 0 0;
+}
+
+#footerwrap #footerContact a {
+  text-decoration: none;
+  color: #f1fffe;
+  font-family: georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+  float: right;
+  margin-top: 8px;
+}
+
+#footerwrap #footerContact a:hover {
+  color: #92c202;
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+  -o-transition: color .2s linear;
+  -ms-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+#footerwrap .legal {
+  font-size: 11px;
+  color: #f1fffe;
+}
+
+
+
+
+/* Index Page Styles */
+
+#main #newsFeed {
+  float: left;
+  margin: 14px 14px 0 52px;
+  width: 478px;
+}
+
+#main #newsFeed p {
+ font-style: italic;
+ font-size: 16px;
+ line-height: 29px;
+ text-shadow: 0 1px 0 white;
+}
+
+#main #twitterFeed {
+  margin-top: 14px;
+  float: left;
+}
+
+#main #twitterFeed .twitter-follow-button {margin-top: 16px;}
+
+#main #todaysDeals {
+  padding: 24px 0;
+  width: 100%;
+}
+
+#main #todaysDeals h2{margin-left: 54px;}
+#main #todaysDeals > a{margin-right: 54px;}
+
+#todaysDealsWrap {
+  width: 858px;
+  float: left;
+  overflow: hidden;
+}
+
+#todaysDeals ul.dealList {
+  overflow: hidden;
+  width: 9999px
+}
+
+#todaysDeals ul.dealList li {
+  position: relative;
+}
+
+#todaysDeals #rightNav, #todaysDeals #leftNav {
+  background: url('../img/arrowSprite.png') no-repeat left top transparent;
+  width: 37px; height: 38px;
+  float: left;
+  margin: 110px 9px 0;
+}
+
+#todaysDeals #rightNav {background-position: 0 0;}
+#todaysDeals #rightNav:hover {background-position: 0 -38px;}
+#todaysDeals #leftNav {background-position: -37px 0;}
+#todaysDeals #leftNav:hover {background-position: -37px -38px;}
+
+
+/* Deals Pages styles */
+
+#main .dealsPages ul.dealList, #main ul.placesList {width: 880px;}
+
+.dealsPages h3.cta1 {margin: 0;}
+.dealsPages h3.cta1 a {color: #439EC8; text-decoration: none;}
+.dealsPages h3.cta1 a:hover {text-decoration: underline;}
+
+input.sb-select {
+  background: url("../img/dropDownBG.jpg") no-repeat right bottom transparent;
+}
+
+/* Sorter Styles */
+
+.sb-custom {
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  width:  100%;
+}
+
+#main #sorterWrap {float: right; margin-top: -35px; position: relative;}
+#main #sorterWrap h3.cta2 {margin: 6px 0 0 0;}
+#main #sorterWrap form {float: right; margin-left: 8px;}
+
+.sparkbox-custom {
+  display: none;
+  float: right;
+}
+
+.sb-select:focus {
+  -webkit-box-shadow: 0 0 0 1px #439ec8;
+     -moz-box-shadow: 0 0 0 1px #439ec8;
+          box-shadow: 0 0 0 1px #439ec8;
+}
+.sb-select {
+  left: 0;
+  padding: 6px 10px 7px;
+  margin: 0 13px 0 0;
+  position: relative;
+  text-decoration: none;
+  top: 0;
+  width: 154px;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  font-size: 15px;
+  z-index: 21;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 white, inset 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white, inset 0 1px 0 white;
+  box-shadow: 0 1px 0 white, inset 0 1px 0 white;
+  border: 1px solid #d4d2d2;
+  background: url("../img/box1bg.png") repeat #bbb;
+    background-image: linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -o-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -moz-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -webkit-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -ms-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.04, rgba(178, 178, 178, 0.1)),
+      color-stop(0.36, rgba(255, 255, 255, 0.4))
+    ), url("../img/box1bg.png");
+}
+.sb-dropdown {
+  background: url("../img/bodybg.jpg") repeat scroll 0 0 transparent;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
+     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
+          box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
+  display: none;
+  font-size: .9em;
+  left: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 5px 5px 5px;
+  position: absolute;
+  top: 1.35em;
+  width: 153px;
+  z-index: 20;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px white;
+  opacity: 0.98;
+  border: 1px solid #CCCCCC;
+}
+.sb-dropdown a {
+  color: #444;
+  display: block;
+  padding: 10px 0 10px 26px;
+  text-decoration: none;
+  font-size: 15px;
+  font-style: italic;
+  border-radius: 3px;
+}
+.sb-dropdown a:hover,
+.sb-dropdown .selected {
+  background: #ddd;
+  border-radius: 3px;
+}
+
+#sorterWrap h3 a {
+  background: url("../img/dropDownBG.jpg") no-repeat scroll left bottom transparent;
+  border: 1px solid #D4D2D2;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 1px 0 white, 0 1px 0 white inset;
+  display: block;
+  float: right;
+  height: 24px;
+  margin: -6px 0 0 8px;
+  padding: 3px 10px 5px;
+  text-indent: -9999px;
+  width: 19px;
+}
+
+#sortBy h3 a:active {
+  -webkit-box-shadow: 0 0 0 1px #439ec8;
+     -moz-box-shadow: 0 0 0 1px #439ec8;
+          box-shadow: 0 0 0 1px #439ec8;
+}
+#sortBy h3 a:focus {outline: none;}
+
+/* Places Pages styles */
+
+#main.places #busInfo {height: 280px; width: 288px;}
+#main.places #busInfo #busLogo {background-repeat: no-repeat;}
+#main.places #busInfo ul {
+  padding: 0;
+  font-family: "Arvo", helvetica, arial, sans-serif;
+  font-size: 12px;
+  }
+#main.places #busInfo ul li {margin: 8px 0 0; font-weight: 700;}
+#main.places #busInfo ul span {font-weight: 400;}
+
+#main.places #dailyDeals {width: 428px; height: 280px; margin: 12px 0 12px 32px;}
+#main.places #dailyDeals .listWrap {width: 105%;}
+#main.places #dailyDeals h2 {font-size: 20px;}
+#main.places #dailyDeals .listWrap > h3 {
+  color: #CCCCCC;
+  font-size: 40px;
+  margin: 90px 28px 0 0;
+  text-align: center;
+  text-shadow: 2px 2px 3px white;
+}
+#main.places #dailyDeals .placesList {width: 436px;}
+#main.places #dailyDeals .dealTab h4 {
+  font-size: 50px;
+  margin: 12px 0 0 0;
+  height: 34px;
+  width: 50px;
+  float: left;
+}
+#main.places #dailyDeals .dealTab h4 span {
+  font-size: 28px;
+  top: -16px;
+}
+#main.places #dailyDeals .dealTab h4 span.off {
+  font-size: 16px;
+  left: -24px;
+  top: 0;
+}
+
+#main.places #dailyDeals .dealTab h5 {
+  line-height: 12px;
+  position: relative;
+  top: 20px;
+  text-align: right;
+  font-weight: 400px;
+  font-size: 12px;
+}
+#main.places #dailyDeals .dealTab h5 span {font-weight: 700;font-size: 14px;}
+
+#main.places #dailyDeals .dealTab div.row {height: 54px;}
+#main.places #dailyDeals .dealTab h3 {font-size: 22px;margin: 0; padding: 13px 0 0;}
+
+/* Contact Page styles */
+
+.contact .box1 .left {
+  width: 300px;
+  margin-right: 60px;
+}
+
+.contact form input, .contact form textarea {
+  display: block;
+  padding: 10px 12px;
+  width: 200px;
+  border-radius: 5px;
+  color: #aaa;
+  border: 1px solid #ccc;
+  margin: 0 0 12px;
+  font-family: georgia, serif;
+}
+
+.contact form textarea {
+  width: 360px;
+}
+
+.contact form #submit {
+  border-color: #333333;
+  background-color: #333333;
+  background: url("../img/box2bg.jpg") left top repeat-x transparent;
+  width: 384px;
+}
+
+.contact form #submit:active {
+  -webkit-box-shadow: 0 0 2px 3px #439ec8;
+     -moz-box-shadow: 0 0 2px 3px #439ec8;
+          box-shadow: 0 0 2px 3px #439ec8;
+}
+
+#main.contact .contactInfo {
+  width: 294px;
+  margin-right: 36px;
+}
+
+#main.contact .form {
+  padding: 40px 70px;
+}
+
+/* About Page styles */
+
+.about #main nav ul.subnav {  padding: 0; margin: 0;}
+.about #main nav {margin: 0 0 44px 150px;}
+
+.about #main .box1.content {
+  width: 640px;
+  padding-top: 14px;
+}
+.about #main h2 {margin-top: 36px;position: relative;}
+.about #main h3 {margin: 16px 0 8px;font-weight: 700;}
+.about #main p {margin: 8px 0 8px 8px;}
+
+.about #main h2 a {
+  position: absolute;
+  top: 0; right: 0;
+  display: block;
+  background: url("../img/upArrow.jpg") center center no-repeat transparent;
+  height: 30px;
+  width: 40px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.about #main h2 a:active {
+  -webkit-box-shadow: 0 0 2px 3px #439ec8;
+     -moz-box-shadow: 0 0 2px 3px #439ec8;
+          box-shadow: 0 0 2px 3px #439ec8;
+}
+
+/* 404 page styles */
+
+.error .content {text-align: center;}
+.error .content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.error #main .content h2 {margin-bottom: 40px;}
+
+.error #main .content img {
+  border-radius: 5px;
+  float: left;
+  margin-left: 66px;
+}
+
+.error #main .content p {
+  width: 260px;
+  text-align: left;
+  float: left;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 0 0 36px;
+  }
