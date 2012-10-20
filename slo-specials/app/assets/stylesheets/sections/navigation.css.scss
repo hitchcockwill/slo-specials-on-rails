@@ -1,111 +1,95 @@
 
 //  Header styles
 
-#sitestripe {
-  background: url("/assets/./box2bg.jpg") repeat scroll 0 0 #BBBBBB;
-  height: 10px;
-  opacity: 0.3;
-  width: 100%;
-}
-
 header {
   margin-top: 36px;
   position: relative;
+  img {
+    float: left; 
+    width: 176px; 
+    height: 175px;
+    position: relative;
+    z-index: 5;
+    @include border-radius(80px);
+  }
+  h2 {
+    color: #92C202;
+    float: left;
+    margin: 15px 0 10px 8px;
+  }
 }
 
-header img {
-  float: left; 
-  width: 176px; 
-  height: 175px;
-  position: relative;
-  z-index: 5;
-  @include border-radius(80px);
-}
-
-header h2 {
-  color: #92C202;
-  float: left;
-  margin: 15px 0 10px 8px;
-}
-
-/*  Nav styles */
+//  Nav styles
 
 nav ul {
   height: 73px;
-}
 
-  nav ul.mainnav {
-  float: left;
-  margin-left: -40px;
-  margin-top: 0;
-  width: 480px;
+  &.mainnav {
+    float: left;
+    margin-left: -40px;
+    margin-top: 0;
+    width: 480px;
   }
-  
-  nav ul.rightnav {
+  &.rightnav {
     float: right;
     margin-top: 4px;
     width: 220px;
   }
-
-nav ul li {
-  display: inline;
-  width: 106px;
-  float: right;
-}
-
-
-nav ul.box1 li {
-  background: url("/assets/./navDiv.jpg") right 10px no-repeat;
-  height: 73px;
-}
-
-  nav ul.box1 li.last {
-    background-image: none;
+  li {
+    display: inline;
+    width: 106px;
+    float: right;
   }
-  
-nav ul a {
-  display: block;
-  text-decoration: none;
-  color: #439ec8;
-  font-family: "Arvo", helvetica, arial, sans-serif;
-  font-size: 20px;
-  line-height: 19px;
-  padding: 25px 10px 0;
-  text-align: right;
-}
-  nav ul a:visited {color: #439ec8;}
-  nav ul a:hover, .cta:hover {
-    color: #92c202;
-    -webkit-transition: color .2s linear;
-    -moz-transition: color .2s linear;
-    -o-transition: color .2s linear;
-    -ms-transition: color .2s linear;
-    transition: color .2s linear;
+
+  &.box li {
+    background: url("/assets/./navDiv.jpg") right 10px no-repeat;
+    height: 73px;
+    &.last {
+      background-image: none;
+    }
   }
-  nav ul a.double {padding-top: 17px;}
-  nav ul a.active {color: #92c202;}
-  
-  /* subnav styles */
-  
-  nav ul.subnav {
-  border-radius: 0 0 0 0;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #439ec8;
+    font-family: "Arvo", helvetica, arial, sans-serif;
+    font-size: 20px;
+    line-height: 19px;
+    padding: 25px 10px 0;
+    text-align: center;
+
+    &:visited { color: #439ec8; }
+    &:hover, .cta:hover {
+      color: #92c202;
+      @include transition-property(color);
+      @include transition-duration(.2s);
+    }
+    &.double { padding-top: 17px; }
+    &.active { color: #92c202; }
+  }
+}
+
+// Subnav styles
+nav ul.subnav {
+  @include border-radius(0);
   float: left;
   height: 30px;
   margin: -14px 0 0 160px;
   padding: 0;
+
+  li {
+    background-position: right 4px;
+    float: left;
+    height: 27px;
+    padding: 0;
+    width: auto;
+
+    a {
+      font-size: 16px;
+      padding: 6px 12px;
+      text-align: left;
+      text-transform: lowercase;
+    }
   }
-  
-  nav ul.subnav li {
-  background-position: right 4px;
-  float: left;
-  height: 27px;
-  padding: 0;
-  width: auto;
-  }
-  
-  nav ul.subnav li a {
-    font-size: 16px;
-    padding: 6px 12px;
-    text-align: left;
-    text-transform: lowercase;
-  }
+}
