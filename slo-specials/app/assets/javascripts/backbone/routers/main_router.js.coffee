@@ -7,4 +7,4 @@ class SloSpecials.Routers.Main extends Backbone.Router
     '' : 'index'
 
   index: ->
-    console.log 'index logged'
+    SloSpecials.content.show new SloSpecials.Views.Index()

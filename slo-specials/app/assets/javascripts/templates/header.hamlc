@@ -16,7 +16,7 @@
       %a{ :href => "/food" }
         food
     %li
-      %a{ :href => "/deals-by-day" }
+      %a{ :href => "/deals-by-day", :class => "double" }
         deals
         %br
           by day

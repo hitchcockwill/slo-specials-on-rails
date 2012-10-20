@@ -10,7 +10,7 @@
       %li
         %a{ :href => "food/all" }
           See all deals
-    %h3
+    %h3.special
       %a{:href => "/drinks"}
         Drinks
     %ul

@@ -1,0 +1,109 @@
+// **********************************************************************
+// Styles for page sorters and filters
+// **********************************************************************
+
+input.sb-select {
+  background: url("../img/dropDownBG.jpg") no-repeat right bottom transparent;
+}
+
+.sb-custom {
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  width:  100%;
+}
+
+#main #sorterWrap {float: right; margin-top: -35px; position: relative;}
+#main #sorterWrap h3.cta2 {margin: 6px 0 0 0;}
+#main #sorterWrap form {float: right; margin-left: 8px;}
+
+.sparkbox-custom {
+  display: none;
+  float: right;
+}
+
+.sb-select:focus {
+  -webkit-box-shadow: 0 0 0 1px $bright-blue;
+     -moz-box-shadow: 0 0 0 1px $bright-blue;
+          box-shadow: 0 0 0 1px $bright-blue;
+}
+.sb-select {
+  left: 0;
+  padding: 6px 10px 7px;
+  margin: 0 13px 0 0;
+  position: relative;
+  text-decoration: none;
+  top: 0;
+  width: 154px;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  font-size: 15px;
+  z-index: 21;
+  @include border-radius(5px);
+  @include box-shadow(0 1px 0 white, inset 0 1px 0 white);
+  border: 1px solid $light-gray;
+  background: url("../img/box1bg.png") repeat #bbb;
+    background-image: linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -o-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -moz-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -webkit-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -ms-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.04, rgba(178, 178, 178, 0.1)),
+      color-stop(0.36, rgba(255, 255, 255, 0.4))
+    ), url("../img/box1bg.png");
+}
+.sb-dropdown {
+  background: url("../img/bodybg.jpg") repeat scroll 0 0 transparent;
+  @include box-shadow(0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5));
+  display: none;
+  font-size: .9em;
+  left: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 5px 5px 5px;
+  position: absolute;
+  top: 1.35em;
+  width: 153px;
+  z-index: 20;
+  @include border-radius(3px);
+  @include box-shadow(1px 1px 0px white);
+  opacity: 0.98;
+  border: 1px solid #CCCCCC;
+}
+.sb-dropdown a {
+  color: #444;
+  display: block;
+  padding: 10px 0 10px 26px;
+  text-decoration: none;
+  font-size: 15px;
+  font-style: italic;
+  @include border-radius(3px);
+}
+.sb-dropdown a:hover,
+.sb-dropdown .selected {
+  background: #ddd;
+  @include border-radius(3px);
+}
+
+#sorterWrap h3 a {
+  background: url("../img/dropDownBG.jpg") no-repeat scroll left bottom transparent;
+  border: 1px solid $light-gray;
+  @include border-radius(5px);
+  @include box-shadow(0 1px 0 white, 0 1px 0 white inset);
+  display: block;
+  float: right;
+  height: 24px;
+  margin: -6px 0 0 8px;
+  padding: 3px 10px 5px;
+  text-indent: -9999px;
+  width: 19px;
+}
+
+#sortBy h3 a:active {
+  @include box-shadow(0 0 0 1px $bright-blue);
+}
+#sortBy h3 a:focus {outline: none;}
