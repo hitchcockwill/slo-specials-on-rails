@@ -1,0 +1,36 @@
+// ==|== Global Body Styles
+
+// Colors
+$bright-blue: #439ec8;
+$bright-green: #92c202;
+$dark-gray: #383735;
+$light-gray: #d4d2d2;
+$off-white: #f1fffe;
+$dark-red: #c25130;
+
+body {
+    background: url("/assets/./bodybg.jpg") repeat transparent;
+    font-family: georgia, times, serif;
+    color: #444444;
+}
+
+p {
+  font-family: georgia;
+  font-size: 14px;
+  line-height:23px;
+}
+
+header, #main, #footerwrap {
+  width: 968px;
+  padding: 0 24px;
+  margin:0 auto;
+}
+
+body p a {
+  color: #439EC8;
+  font-style: italic;
+}
+body p a:visited {color:#439EC8;}
+body p a:hover {color: #92c202;}
+
+h1, h2, h3, h4, h5, h6 {font-family: "Arvo", helvetica, arial, sans-serif; font-weight: 400;}

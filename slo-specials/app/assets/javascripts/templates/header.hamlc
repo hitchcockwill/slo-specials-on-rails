@@ -1,3 +1,28 @@
 %header
-  %h2= @title
-  %p= @attr
+  %a{ :href => "/" }
+    %img{ :src => "/assets/./ssLogo.png", :alt => "S.L.O. Specials"}
+  %h2
+    You are living in San Luis Obispo on a budget.
+    %br Here are all the deals you should know about.
+  %nav
+    %ul{ :class => "box1 mainnav" }
+      %li{ :class => "last" }
+        %a{ :href => "/places" }
+          places
+      %li
+        %a{ :href => "/drinks" }
+          drinks
+      %li
+        %a{ :href => "/food" }
+          food
+      %li
+        %a{ :href => "/deals-by-day" }
+          deals
+          %br by day
+    %ul{ :class => "rightnav" }
+      %li
+        %a{ :href => "/about"}
+          about
+      %li
+        %a{ :href => "/contact"}
+          contact
