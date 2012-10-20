@@ -1,0 +1,27 @@
+/* 404 page styles */
+
+.error {
+  #main .content {
+    text-align: center;
+    h1 {
+      font-size: 50px;
+      margin-bottom: 0;     
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+    img {
+      @include border-radius(5px);
+      float: left;
+      margin-left: 66px;
+    }
+    p {
+      width: 260px;
+      text-align: left;
+      float: left;
+      font-size: 20px;
+      line-height: 28px;
+      margin: 0 0 0 36px;
+    }
+  }
+}

@@ -8,4 +8,7 @@
 @import "compass";
 @import "compass/css3";
 @import "normalize";
+@import "global/colors";
+@import "global/mixins";
+@import "global/*";
 @import "sections/*";

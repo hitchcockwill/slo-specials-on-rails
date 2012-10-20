@@ -1,0 +1,55 @@
+.box1 {
+  @include border-radius(5px);
+  @include box-shadow(0 1px 0 white, inset 0 1px 0 white);
+  background: url("../img/box1bg.png") repeat #bbb;
+  border: 1px solid $light-gray;
+  @include background(linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png"));
+}
+
+#main .box1 {
+  padding: 24px 54px;
+  margin: 12px 0 0;
+}
+
+.box2 {
+  @include border-radius(5px);
+  @include box-shadow(0 1px 0 white, inset 0 1px 0 #999);
+  background: url("../img/box2bg.jpg") repeat #bbb;
+  border: 1px solid $dark-gray;
+  @include background(linear-gradient(center bottom , rgba(0, 0, 0, 0.25) 4%, rgba(80, 80, 80, 0) 86%), url("../img/box2bg.jpg"));
+}
+
+.cta2 {
+  text-decoration: none;
+  color: $dark-gray;
+  font-family: georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+  float: right;
+  margin-top: -22px;
+
+  &:hover {
+    color: $bright-green;
+    @include transition-property(color);
+    @include transition-duration(.2s);
+  }
+  &:visited {
+    color: $dark-gray;
+    @include transition-property(color);
+    @include transition-duration(.2s);
+  }
+}
+
+.box1.select1 {
+  @include border-radius(3px);
+  font-family: georgia, serif;
+  font-style: italic;
+  padding: 6px 12px !important;
+  width: 160px;
+  background-color: white;
+}
+
+.box1.select1 option {
+  margin: 6px;
+  padding: 0 0 0 12px;
+}
