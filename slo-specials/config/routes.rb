@@ -21,5 +21,6 @@ SloSpecials::Application.routes.draw do
   match "deals/drinks" => "deals#index"
   match "deals/drinks/:day" => "deals#index"
 
+  match "places/:id" => "venues#show"
   match "places" => "venues#index"
 end

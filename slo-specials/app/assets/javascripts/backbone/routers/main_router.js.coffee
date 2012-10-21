@@ -29,8 +29,8 @@ class SloSpecials.Routers.Main extends Backbone.Router
     'deals/food' : 'food'
     'deals/drinks' : 'drinks'
     'deals' : 'deals'
-    'venues/:id' : 'venue_by_id'
-    'venues' : 'venues'
+    'places/:id' : 'venue_by_id'
+    'places' : 'venues'
 
   index: ->
     SloSpecials.content.show new SloSpecials.Views.Index()
@@ -52,11 +52,15 @@ class SloSpecials.Routers.Main extends Backbone.Router
     unless day then day = null
     deals_layout = @deals_layout(day)
 
+    title = if day then "Deals by Day" else "All Deals"
+
     deals = new SloSpecials.Collections.Deals
       day: day
     deals.fetch
       success: ->
-        deals_layout.content.show new SloSpecials.Views.AllDeals( collection: deals )
+        deals_layout.content.show new SloSpecials.Views.AllDeals
+          collection: deals
+          title: title
 
   food: (day) ->
     unless day then day = null
@@ -65,7 +69,9 @@ class SloSpecials.Routers.Main extends Backbone.Router
     deals = new SloSpecials.Collections.Food()
     deals.fetch
       success: ->
-        deals_layout.content.show new SloSpecials.Views.AllDeals( collection: deals )
+        deals_layout.content.show new SloSpecials.Views.AllDeals
+          collection: deals
+          title: "Food Deals"
 
   drinks: (day) ->
     unless day then day = null
@@ -74,7 +80,9 @@ class SloSpecials.Routers.Main extends Backbone.Router
     deals = new SloSpecials.Collections.Drinks()
     deals.fetch
       success: ->
-        deals_layout.content.show new SloSpecials.Views.AllDeals( collection: deals )
+        deals_layout.content.show new SloSpecials.Views.AllDeals
+          collection: deals
+          title: "Drink Deals"
 
   # ###################################################################
   # Venues

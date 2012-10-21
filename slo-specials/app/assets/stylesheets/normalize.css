@@ -72,7 +72,7 @@ td { vertical-align: top; }
 .clearfix { zoom: 1; }
 .fL {float: left;}
 .fR {float: right;}
-.clear {clear:both;}
+.clr {clear:both;}
 
 // ==|== media queries ====================================================== 
 

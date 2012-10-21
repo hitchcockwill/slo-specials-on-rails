@@ -69,9 +69,12 @@
 #footerContact.fL
   %h2 
     Want to tell us about more deals?
-    %br Like what we are doing here?
-    %br Interested in getting ad space?
-    %br Want to learn more?
+    %br
+      Like what we are doing here?
+    %br
+      Interested in getting ad space?
+    %br
+      Want to learn more?
   %a{:href => "/contact", :class => "fR"}
     Get in touch>>
 .clearfix

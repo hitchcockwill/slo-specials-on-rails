@@ -19,7 +19,9 @@ class SloSpecials.Views.AllDeals extends Backbone.Marionette.CompositeView
   template: JST['deals/alldeals']
   className: "clearfix"
 
-  initialize: ->
+  initialize: (options) ->
+    if options.title
+      @model = new Backbone.Model(title: options.title)
     @collection.on 'change', @render, this
     console.log 'called the collection', @collection
 

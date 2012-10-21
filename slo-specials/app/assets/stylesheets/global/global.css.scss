@@ -24,12 +24,6 @@ p {
   line-height:23px;
 }
 
-header, #content, #footerwrap {
-  width: 968px;
-  padding: 0 24px;
-  margin:0 auto;
-}
-
 body p a {
   color: $bright-blue;
   font-style: italic;
@@ -39,9 +33,30 @@ body p a {
 
 h1, h2, h3, h4, h5, h6 {font-family: "Arvo", helvetica, arial, sans-serif; font-weight: 400;}
 
+#content h2 {
+  clear: both;
+  font-size: 26px;
+  color: $bright-blue;
+  margin: 0;
+}
+
 #sitestripe {
   background: url("/assets/./box2bg.jpg") repeat scroll 0 0 #BBBBBB;
   height: 10px;
   opacity: 0.3;
   width: 100%;
+}
+
+// **********************************************************************
+// Layout Positioning
+// **********************************************************************
+
+header, #content, #footerwrap {
+  width: 968px;
+  padding: 0 24px;
+  margin:0 auto;
+}
+
+#deals-layout-content {
+  margin-top: 13px;
 }

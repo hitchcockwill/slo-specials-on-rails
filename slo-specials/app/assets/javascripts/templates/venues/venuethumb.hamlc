@@ -1,4 +1,4 @@
-%a{:href => "/venues/#{@id}"}
+%a{:href => "/places/#{@id}"}
   .dealStripe
   .dealData
     %h3.row= @name

@@ -1,0 +1,19 @@
+// **********************************************************************
+// Deals Pages styles
+// **********************************************************************
+#deals-layout {
+  .dealsPage.box1 {
+    padding: 20px 30px;
+  }
+  #deal-list {
+    padding: 0;
+  }
+  h3.cta1 {
+    margin: 0;
+    a {
+      color: $bright-blue;
+      text-decoration: none;
+      &:hover {text-decoration: underline;}
+    }
+  }
+}

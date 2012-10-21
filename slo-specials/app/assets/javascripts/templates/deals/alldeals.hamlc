@@ -1,1 +1,5 @@
-%ul#deal-list
+.dealsPage.box1.clearfix
+  %h2.fL.cta1= @title
+  #sorterWrap.fR
+  .clr
+  %ul#deal-list.clearfix
