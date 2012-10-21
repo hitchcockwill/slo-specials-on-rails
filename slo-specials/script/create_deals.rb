@@ -1212,7 +1212,7 @@ def get_price(d)
   cents = d["cents"]
   if cents.length == 3 then cents = cents.slice(1..2) end
   if check_float(cents) and check_float(dollars)
-    total = (dollars.to_f*100+cents.to_f)/100
+    total = (dollars.to_f*100+cents.to_f)
   end
   total
 end

@@ -51,5 +51,11 @@ class Api::V1::DealsController < Api::ApiController
   # DELETE /deals/1.json
   def destroy
     @deal = Deal.find(params[:id])
+    @deal.destroy
+  end
+
+  def food
+    @deals = Deal.where(:kind => "food")
+    respond_with @deals
   end
 end

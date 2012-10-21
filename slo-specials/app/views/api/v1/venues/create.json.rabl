@@ -1,2 +1,2 @@
 object @venue
-extends "/api/v1/venues/show"
+extends "api/v1/venues/show"
