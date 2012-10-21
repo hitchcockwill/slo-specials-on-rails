@@ -1,5 +1,35 @@
 .dealsPage.box1.clearfix
   %h2.fL.cta1= @title
-  #sorterWrap.fR
+  #sorterWrap.fR.clearfix
+    %h3.cta2.fR 
+      Order
+      %a{:href => ""}
+        reverse
+    %form.filter.fR
+      %select.sparkbox-custom
+        %option{:value => "all", :class => "all"}
+          %a{:href => ""}
+            view all deals
+        %option{:value => "foodDeals", :class => "foodDeals"}
+          %a{:href => ""}
+            view food deals
+        %option{:value => "drinkDeals", :class => "drinkDeals"}
+          %a{:href => ""}
+            view drink deals
+    %h3.cta2.fR
+      Filter
+    %form.sort.fR
+      %select.sparkbox-custom
+        %option{:value => "restaurant", :class => "restaurant"}
+          %a{:href => ""}
+            restaurant
+        %option{:value => "price", :class => "price"}
+          %a{:href => ""}
+            price
+        %option{:value => "dealName", :class => "dealName"}
+          %a{:href => ""}
+            deal name
+    %h3.cta2.fR
+      Sort by
   .clr
   %ul#deal-list.clearfix
