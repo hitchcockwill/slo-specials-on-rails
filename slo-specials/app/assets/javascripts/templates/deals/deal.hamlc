@@ -1,25 +1,24 @@
-%li.dealTab.box2
-  - if @kind == "food"
-    .dealStripe.food
-  - else
-    .dealStripe.drink
-  .dealData
-    %h4.row
-      - if @unit == "price"
-        %span $
+- if @kind == "food"
+  .dealStripe.food
+- else
+  .dealStripe.drink
+.dealData
+  %h4.row.clearfix
+    - if @unit == "price"
+      %span $
+      %span.dollars= @dollars
+      %span= @cents
+      %span.off.offFix
+    - else
+      - if @unit == "for"
         %span.dollars= @dollars
-        %span= @cents
-        %span.off.offFix
+        %span.for for
+        %span.for2= @cents
       - else
-        - if @unit == "for"
-          %span.dollars= @dollars
-          %span.for for
-          %span.for2= @cents
-        - else
-          %span.dollars= @dollars
-          %span %
-          %span.off off
-    %h3.row= @title
-    %h5= @venue.name
-    %h6= @days
-      %span= @hours
+        %span.dollars= @dollars
+        %span %
+        %span.off off
+  %h3.row= @title
+  %h5= @venue.name
+  %h6= @days
+    %span= @hours

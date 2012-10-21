@@ -488,7 +488,7 @@ placesArray = [
   {
   "place" => "frog-and-peach",
   "busInfo" =>  {
-        "busName" =>"Frog &amp; Peach Pub",
+        "busName" =>"Frog & Peach Pub",
         "hours" => "12pm-2am daily",
         "address" => "728 Higuera St.",
         "phone" => "(805) 595-3764" ,
@@ -511,7 +511,7 @@ placesArray = [
       "kind" => "drink",
       "days" => "Tuesdays",
       "daysArray" => [false, false, true, false, false, false, false],
-      "additionalDetails" => "must have Frog&amp;Peach pint glass ($5)"
+      "additionalDetails" => "must have Frog&Peach pint glass ($5)"
     },
     {
       "deal" => "Premium Pints",
@@ -523,7 +523,7 @@ placesArray = [
       "kind" => "drink",
       "days" => "Tuesdays",
       "daysArray" => [false, false, true, false, false, false, false],
-      "additionalDetails" => "must have Frog&amp;Peach pint glass ($5)"
+      "additionalDetails" => "must have Frog&Peach pint glass ($5)"
     },
     {
       "deal" => "Pitchers",
@@ -1088,7 +1088,7 @@ placesArray = [
           "additionalDetails" => "Beef, black bean, or pinto bean tacos. Add a Negro Modelo for only $3."
         },
         {
-          "deal" => "2 Tacos &amp; Negro Modelo",
+          "deal" => "2 Tacos & Negro Modelo",
           "unit"  => "$",
           "dollars" => "6",
           "cents" => ".00",
@@ -1112,7 +1112,7 @@ placesArray = [
           "additionalDetails" => "Mild, medium, or hot BBQ wings."
         },
         {
-          "deal" => "Meatball sandwich &amp; a pint",
+          "deal" => "Meatball sandwich & a pint",
           "unit"  => "$",
           "dollars" => "10",
           "cents" => "",
@@ -1189,7 +1189,7 @@ placesArray = [
           "additionalDetails" => "XL pizzas with one more toppings."
         },
         {
-          "deal" => "Student Special&ndash;<br/> XL Pizza",
+          "deal" => "Student Special - XL Pizza",
           "unit"  => "%",
           "dollars" => "20",
           "cents" => "",
