@@ -8,12 +8,8 @@ class SloSpecials.Routers.Main extends Backbone.Router
       $this = $(this)
       if $this.attr('href')[0] is '/'
         ## check for user voice plugin
-        if $this.hasClass('script')
-          return
-        else
-          evt.preventDefault()
-        if evt.metaKey is true
-          window.open($(this).attr('href'), '_blank')
+        if $this.hasClass('script') then return else evt.preventDefault()
+        if evt.metaKey is true then window.open($(this).attr('href'), '_blank')
         else
           SloSpecials.routers.main.navigate $(this).attr('href'), 
             'trigger': true
@@ -24,13 +20,19 @@ class SloSpecials.Routers.Main extends Backbone.Router
     '' : 'index'
     'deals-by-day' : 'deals'
     'deals' : 'deals'
-    'deals/food' : 'deals_food'
+    'deals/food' : 'food'
+    'food' : 'food'
 
   index: ->
     SloSpecials.content.show new SloSpecials.Views.Index()
 
   deals: -> 
     deals = new SloSpecials.Collections.Deals()
+    SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
+    deals.fetch()
+
+  food: ->
+    deals = new SloSpecials.Collections.Food()
     SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
     deals.fetch()
         

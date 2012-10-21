@@ -3,7 +3,7 @@
 // **********************************************************************
 
 input.sb-select {
-  background: url("../img/dropDownBG.jpg") no-repeat right bottom transparent;
+  background: url("/assets/./dropDownBG.jpg") no-repeat right bottom transparent;
 }
 
 .sb-custom {
@@ -42,22 +42,22 @@ input.sb-select {
   @include border-radius(5px);
   @include box-shadow(0 1px 0 white, inset 0 1px 0 white);
   border: 1px solid $light-gray;
-  background: url("../img/box1bg.png") repeat #bbb;
-    background-image: linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
-    background-image: -o-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
-    background-image: -moz-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
-    background-image: -webkit-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
-    background-image: -ms-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("../img/box1bg.png");
+  background: url("/assets/./box1bg.png") repeat #bbb;
+    background-image: linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("/assets/./box1bg.png");
+    background-image: -o-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("/assets/./box1bg.png");
+    background-image: -moz-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("/assets/./box1bg.png");
+    background-image: -webkit-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("/assets/./box1bg.png");
+    background-image: -ms-linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("/assets/./box1bg.png");
     background-image: -webkit-gradient(
       linear,
       left bottom,
       left top,
       color-stop(0.04, rgba(178, 178, 178, 0.1)),
       color-stop(0.36, rgba(255, 255, 255, 0.4))
-    ), url("../img/box1bg.png");
+    ), url("/assets/./box1bg.png");
 }
 .sb-dropdown {
-  background: url("../img/bodybg.jpg") repeat scroll 0 0 transparent;
+  background: url("/assets/./bodybg.jpg") repeat scroll 0 0 transparent;
   @include box-shadow(0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5));
   display: none;
   font-size: .9em;
@@ -90,7 +90,7 @@ input.sb-select {
 }
 
 #sorterWrap h3 a {
-  background: url("../img/dropDownBG.jpg") no-repeat scroll left bottom transparent;
+  background: url("/assets/./dropDownBG.jpg") no-repeat scroll left bottom transparent;
   border: 1px solid $light-gray;
   @include border-radius(5px);
   @include box-shadow(0 1px 0 white, 0 1px 0 white inset);
