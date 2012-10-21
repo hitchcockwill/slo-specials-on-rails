@@ -20,15 +20,16 @@ header {
 }
 
 //  Nav styles
-
 nav ul {
   height: 73px;
+  padding: 0;
 
   &.mainnav {
     float: left;
     margin-left: -40px;
     margin-top: 0;
     width: 480px;
+    padding: 0;
   }
   &.rightnav {
     float: right;

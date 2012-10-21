@@ -4,10 +4,7 @@
   background: url("/assets/./box1bg.png") repeat #bbb;
   border: 1px solid $light-gray;
   @include background(linear-gradient(center bottom , rgba(178, 178, 178, 0.1) 4%, rgba(255, 255, 255, 0.4) 36%), url("/assets/./box1bg.png"));
-}
-
-#main .box1 {
-  padding: 24px 54px;
+  padding: 24px 46px;
   margin: 12px 0 0;
 }
 

@@ -1,1 +1,5 @@
-#venue-list.clearfix
+.placesPage.box1.clearfix
+  %h2.fL.cta1 Places
+  #sorterWrap.fR
+  .clr
+  #venue-list.clearfix

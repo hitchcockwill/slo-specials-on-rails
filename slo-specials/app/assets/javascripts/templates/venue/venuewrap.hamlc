@@ -18,4 +18,8 @@
     %li.dealTab.placesTab.box2
       Some deals
 .clr
-#deals-list.clearfix
+.dealswrap.box1.clearfix
+  %h2.fL.cta1 All Deals at #{@name}
+  #sorterWrap.fR
+  .clr
+  #deals-list.clearfix
