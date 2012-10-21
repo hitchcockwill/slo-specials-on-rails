@@ -54,8 +54,8 @@ class Api::V1::DealsController < Api::ApiController
     @deal.destroy
   end
 
-  def food
-    @deals = Deal.where(:kind => "food")
+  def by_kind
+    @deals = Deal.where(:kind => params[:kind])
     respond_with @deals
   end
 end

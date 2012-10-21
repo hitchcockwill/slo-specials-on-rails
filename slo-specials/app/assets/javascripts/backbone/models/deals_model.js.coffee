@@ -10,4 +10,4 @@ class SloSpecials.Collections.Food extends Backbone.Collection
 
 class SloSpecials.Collections.Drinks extends Backbone.Collection
   model: SloSpecials.Models.Deal
-  url: "/api/v1/deals/drinks"
+  url: "/api/v1/deals/drink"

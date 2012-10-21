@@ -1,0 +1,8 @@
+%a{:href => "/#{@name_url}"}
+  .dealStripe
+  .dealData
+    %h3.row= @name
+    %h5
+      American, Bar
+    %h6
+      Deals Today

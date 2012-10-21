@@ -22,17 +22,33 @@ class SloSpecials.Routers.Main extends Backbone.Router
     'deals' : 'deals'
     'deals/food' : 'food'
     'food' : 'food'
+    'drinks' : 'drinks'
+    'places' : 'venues'
 
   index: ->
     SloSpecials.content.show new SloSpecials.Views.Index()
 
   deals: -> 
     deals = new SloSpecials.Collections.Deals()
-    SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
-    deals.fetch()
+    deals.fetch
+      success: ->
+        SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
 
   food: ->
     deals = new SloSpecials.Collections.Food()
-    SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
-    deals.fetch()
+    deals.fetch
+      success: ->
+        SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
+
+  drinks: ->
+    deals = new SloSpecials.Collections.Drinks()
+    deals.fetch
+      success: ->
+        SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
+
+  venues: ->
+    venues = new SloSpecials.Collections.Venues()
+    venues.fetch
+      success: ->
+        SloSpecials.content.show new SloSpecials.Views.AllVenues( collection: venues )
         
