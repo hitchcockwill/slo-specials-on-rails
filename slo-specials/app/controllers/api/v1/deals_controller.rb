@@ -58,4 +58,23 @@ class Api::V1::DealsController < Api::ApiController
     @deals = Deal.where(:kind => params[:kind])
     respond_with @deals
   end
+
+  def by_day
+    days = {
+      "sunday" => 0,
+      "monday" => 1,
+      "tuesday" => 2,
+      "wednesday" => 3,
+      "thursday" => 4,
+      "friday" => 5,
+      "saturday" => 6,
+      "today" => Time.now.wday
+    }
+    day = days[params[:day]]
+    @deals = Array.new
+    deals = Deal.all
+    deals.each { |d| if d[:time][day] != nil then @deals.push(d) end }
+    Rails.logger.info "called by day #{@deals.count} #{day} ***********************"
+    respond_with @deals
+  end
 end

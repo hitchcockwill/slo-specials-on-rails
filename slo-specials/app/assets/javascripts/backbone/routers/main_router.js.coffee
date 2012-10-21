@@ -18,7 +18,8 @@ class SloSpecials.Routers.Main extends Backbone.Router
 
   routes:
     '' : 'index'
-    'deals-by-day' : 'deals'
+    'daily' : 'deals'
+    'daily/:day' : 'deals'
     'deals' : 'deals'
     'deals/food' : 'food'
     'food' : 'food'
@@ -30,8 +31,9 @@ class SloSpecials.Routers.Main extends Backbone.Router
   index: ->
     SloSpecials.content.show new SloSpecials.Views.Index()
 
-  deals: -> 
-    deals = new SloSpecials.Collections.Deals()
+  deals: (day) -> 
+    deals = new SloSpecials.Collections.Deals
+      day: day
     deals.fetch
       success: ->
         SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
