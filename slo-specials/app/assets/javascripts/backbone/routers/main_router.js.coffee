@@ -95,8 +95,7 @@ class SloSpecials.Routers.Main extends Backbone.Router
         SloSpecials.content.show new SloSpecials.Views.AllVenues( collection: venues )
 
   venue_by_id: (venue_id) ->
-    venue = new SloSpecials.Models.Venue
-      id: venue_id
+    venue = SloSpecials.Models.Venue.findOrCreate( id: venue_id )
     console.log 'called venue by id'
     venue.fetch
       success: ->
