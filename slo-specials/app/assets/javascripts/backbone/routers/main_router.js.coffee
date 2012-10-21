@@ -1,6 +1,7 @@
 class SloSpecials.Routers.Main extends Backbone.Router
   initialize: (options) ->
-    SloSpecials.header.show new SloSpecials.Views.Header()
+    header = new SloSpecials.Views.Header()
+    SloSpecials.header.show header
     SloSpecials.footer.show new SloSpecials.Views.Footer()
 
     ## Prevent default on links and handle command clicking
@@ -15,6 +16,11 @@ class SloSpecials.Routers.Main extends Backbone.Router
             'trigger': true
       else if $this.attr('href') is undefined or $this.attr('href').length is 0 or $this.attr('target') isnt '_blank'
         evt.preventDefault()
+
+    @bind 'all', (route) ->
+      path = window.location.pathname.split('/')
+      if path[1] is "deals" then header.activeLink(path[2])
+      else header.activeLink(path[1])
 
   routes:
     '' : 'index'
@@ -43,6 +49,7 @@ class SloSpecials.Routers.Main extends Backbone.Router
     layout
 
   deals: (day) -> 
+    unless day then day = null
     deals_layout = @deals_layout(day)
 
     deals = new SloSpecials.Collections.Deals
@@ -51,7 +58,8 @@ class SloSpecials.Routers.Main extends Backbone.Router
       success: ->
         deals_layout.content.show new SloSpecials.Views.AllDeals( collection: deals )
 
-  food: ->
+  food: (day) ->
+    unless day then day = null
     deals_layout = @deals_layout(day)
 
     deals = new SloSpecials.Collections.Food()
@@ -59,7 +67,8 @@ class SloSpecials.Routers.Main extends Backbone.Router
       success: ->
         deals_layout.content.show new SloSpecials.Views.AllDeals( collection: deals )
 
-  drinks: ->
+  drinks: (day) ->
+    unless day then day = null
     deals_layout = @deals_layout(day)
 
     deals = new SloSpecials.Collections.Drinks()

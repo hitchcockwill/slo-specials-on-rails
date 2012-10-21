@@ -6,16 +6,16 @@
     Here are all the deals you should know about.
 %nav
   %ul{ :class => "box1 mainnav" }
-    %li{ :class => "last" }
+    %li{ :class => "last places" }
       %a{ :href => "/places" }
         places
-    %li
+    %li.drinks
       %a{ :href => "/deals/drinks" }
         drinks
-    %li
+    %li.food
       %a{ :href => "/deals/food" }
         food
-    %li
+    %li.daily
       %a{ :href => "/deals/daily/today", :class => "double" }
         deals
         %br

@@ -3,6 +3,7 @@
 #= require_tree ./views
 #= require_tree ./routers
 #= require_tree ./layouts
+#= require_tree ./helpers
 
 window.SloSpecials = new Backbone.Marionette.Application()
 
@@ -16,6 +17,7 @@ SloSpecials.routers = {}
 SloSpecials.models = {}
 SloSpecials.collections = {}
 SloSpecials.views = {}
+SloSpecials.helpers = {}
 
 SloSpecials.addRegions
   header: 'header'
@@ -25,6 +27,5 @@ SloSpecials.addRegions
 SloSpecials.addInitializer ->
   SloSpecials.routers.main = new SloSpecials.Routers.Main()
   Backbone.history.start pushState: true
-
 jQuery ->
   SloSpecials.start()

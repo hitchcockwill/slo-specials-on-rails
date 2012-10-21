@@ -39,6 +39,9 @@ nav ul {
     display: inline;
     width: 106px;
     float: right;
+    &.active a {
+      color: $bright-green;
+    }
   }
 
   &.box li {
@@ -82,6 +85,9 @@ nav ul.subnav {
     height: 27px;
     padding: 0;
     width: auto;
+    &.active a {
+      color: $bright-green;
+    }
 
     a {
       font-size: 16px;
