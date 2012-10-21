@@ -1,5 +1,6 @@
 development:
   # Configure available database sessions. (required)
+  logger: false
   sessions:
     # Defines the default session. (required)
     default:

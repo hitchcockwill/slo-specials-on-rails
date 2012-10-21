@@ -5,7 +5,7 @@ class Api::V1::VenuesController < Api::ApiController
   # GET /venues.json
   def index
     @venues = Venue.all
-    puts "Hella ya mutha fucka! #{@venues.count} ******************* "
+    Rails.logger.info @venues.count
   end
 
   # GET /venues/1
