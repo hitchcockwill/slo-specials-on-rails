@@ -1,8 +1,11 @@
-%a{:href => "/#{@name_url}"}
+%a{:href => "/venues/#{@id}"}
   .dealStripe
   .dealData
     %h3.row= @name
     %h5
       American, Bar
-    %h6
-      Deals Today
+    - if @deals_today
+      %h6 Deals Today
+    - else
+      %h6.noDeals No Deals Today
+      

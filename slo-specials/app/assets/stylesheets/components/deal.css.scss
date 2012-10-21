@@ -145,6 +145,9 @@
   h3 {
     font-size: 20px;
     padding: 17px 0;
+    &.double {
+      padding: 7px 0 6px;
+    }
   }
   h5 {
     font-size: 14px;

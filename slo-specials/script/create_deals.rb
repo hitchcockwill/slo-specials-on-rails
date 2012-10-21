@@ -1229,9 +1229,6 @@ def build_time(d)
     end
     time.push(day_info)
   end
-  sunday = time[0]
-  time.shift
-  time.push(sunday)
   time
 end
 
