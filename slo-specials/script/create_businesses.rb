@@ -1203,6 +1203,13 @@ placesArray = [
       }
 ]
 
+def get_tags(v)
+  tags = Array.new
+  tags.push(v["type1"])
+  if v["type2"] and v["type2"].length > 0 then tags.push(v["type2"]) end
+  tags
+end
+
 def new_venue(v)
   venue = Venue.new(
     :name => v["busInfo"]["busName"],
@@ -1212,7 +1219,8 @@ def new_venue(v)
     :phone => if v["busInfo"]["phone"].length > 0 then v["busInfo"]["phone"] else nil end,
     :website => if v["busInfo"]["website"].length > 0 then v["busInfo"]["website"] else nil end,
     :age_limit => if v["busInfo"]["ageLimit"].length > 0 then v["busInfo"]["ageLimit"] else nil end,
-    :details => if v["busInfo"]["additionalDetails"].length > 0 then v["busInfo"]["additionalDetails"] else nil end
+    :details => if v["busInfo"]["additionalDetails"].length > 0 then v["busInfo"]["additionalDetails"] else nil end,
+    :tags => get_tags(v["busInfo"])
   )
   if v["busInfo"]["logo"] != nil and v["busInfo"]["logo"].length > 0
     venue[:logo] = {

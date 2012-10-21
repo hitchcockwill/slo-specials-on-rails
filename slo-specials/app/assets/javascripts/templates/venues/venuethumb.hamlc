@@ -3,9 +3,13 @@
   .dealData
     %h3.row= @name
     %h5
-      American, Bar
+      - index = 0
+      - for tag in @tags
+        = tag
+        - if index < @tags.length-1
+          ,
+        - index++
     - if @deals_today
       %h6 Deals Today
     - else
       %h6.noDeals No Deals Today
-      
