@@ -57,6 +57,7 @@ class SloSpecials.Routers.Main extends Backbone.Router
   venue_by_id: (venue_id) ->
     venue = new SloSpecials.Models.Venue
       id: venue_id
+    console.log 'called venue by id'
     venue.fetch
       success: ->
         SloSpecials.content.show new SloSpecials.Views.Venue( model: venue )

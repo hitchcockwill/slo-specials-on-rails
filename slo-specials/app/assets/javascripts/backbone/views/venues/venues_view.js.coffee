@@ -21,7 +21,7 @@ class SloSpecials.Views.AllVenues extends Backbone.Marionette.CompositeView
 
   initialize: ->
     @collection.on 'change', @render, this
-    console.log 'called the collection', @collection
+    console.log 'Show all venues: ', @collection
 
   appendHtml: (collectionView, itemView) ->
     collectionView.$('#venue-list').append(itemView.el)

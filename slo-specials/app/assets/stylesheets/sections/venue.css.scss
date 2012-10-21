@@ -1,0 +1,70 @@
+/* Places Pages styles */
+#places-page {
+  #busInfo {
+    height: 280px;
+    width: 288px;
+    #busLogo {background-repeat: no-repeat;}
+  }
+  ul {
+    padding: 0;
+    font-family: "Arvo", helvetica, arial, sans-serif;
+    font-size: 12px;
+    li {
+      margin: 8px 0 0;
+      font-weight: bold;
+    }
+    span {
+      font-weight: normal;
+    }
+  }
+
+  #dailyDeals {
+    width: 428px;
+    height: 280px;
+    margin: 12px 0 12px 32px;
+    h2 { font-size: 20px; }
+    > h3 {
+      color: #CCCCCC;
+      font-size: 40px;
+      margin: 90px 28px 0 0;
+      text-align: center;
+      text-shadow: 2px 2px 3px white;
+    }
+    .dealTab {
+      h3 {
+        font-size: 22px;
+        margin: 0;
+        padding: 13px 0 0;
+      }
+      h4 {
+        font-size: 50px;
+        margin: 12px 0 0 0;
+        height: 34px;
+        width: 50px;
+        float: left;
+        span {
+          font-size: 28px;
+          top: -16px;
+          &.off {
+            font-size: 16px;
+            left: -24px;
+            top: 0;
+          }
+        }
+      }
+      h5 {
+        line-height: 12px;
+        position: relative;
+        top: 20px;
+        text-align: right;
+        font-weight: 400px;
+        font-size: 12px;
+        span {
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      div.row { height: 54px; }
+    } // end .dealtab
+  } // end #dailyDeals
+} // end #placespage

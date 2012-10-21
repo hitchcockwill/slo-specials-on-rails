@@ -1,1 +1,21 @@
-#deals-list
+#busInfo.box1.fL.clearfix
+  .busLogo
+    %h1= @name
+  %ul
+    %li Type: 
+      %span= @tags
+    %li Hours:
+      %span= @hours
+    %li Address:
+      %span= @address
+    %li Phone:
+      %span= @phone
+    %li Website:
+      %span= @website
+#dailyDeals.box1.fL.clearfix
+  %h2 Today&acute;s Deals at #{@name}
+  %ul.placesList.clearfix
+    %li.dealTab.placesTab.box2
+      Some deals
+.clr
+#deals-list.clearfix
