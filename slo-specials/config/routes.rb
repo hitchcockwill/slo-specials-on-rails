@@ -14,11 +14,12 @@ SloSpecials::Application.routes.draw do
   root :to => 'home#index'
 
   # Deals Routes
-  match "daily/:day" => "deals#index"
-  match "food" => "deals#index"
-  match "food/:day" => "deals#index"
-  match "drinks" => "deals#index"
-  match "drinks/:day" => "deals#index"
+  match "deals/daily/:day" => "deals#index"
+  match "deals/daily" => "deals#index"
+  match "deals/food" => "deals#index"
+  match "deals/food/:day" => "deals#index"
+  match "deals/drinks" => "deals#index"
+  match "deals/drinks/:day" => "deals#index"
 
   match "places" => "venues#index"
 end

@@ -1,0 +1,24 @@
+%li.fL.all
+  %a{:href => "/deals"}
+    All
+%li.fL.monday
+  %a{:href => "/deals/daily/monday"}
+    Monday
+%li.fL.tuesday
+  %a{:href => "/deals/daily/tuesday"}
+    Tuesday
+%li.fL.wednesday
+  %a{:href => "/deals/daily/wednesday"}
+    Wednesday
+%li.fL.thursday
+  %a{:href => "/deals/daily/thursday"}
+    Thursday
+%li.fL.friday
+  %a{:href => "/deals/daily/friday"}
+    Friday
+%li.fL.saturday
+  %a{:href => "/deals/daily/saturday"}
+    Saturday
+%li.fL.sunday
+  %a{:href => "/deals/daily/sunday"}
+    Sunday

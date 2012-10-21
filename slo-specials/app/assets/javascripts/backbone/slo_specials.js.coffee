@@ -2,6 +2,7 @@
 #= require_tree ./models
 #= require_tree ./views
 #= require_tree ./routers
+#= require_tree ./layouts
 
 window.SloSpecials = new Backbone.Marionette.Application()
 
@@ -9,6 +10,7 @@ SloSpecials.Models = {}
 SloSpecials.Collections = {}
 SloSpecials.Routers = {}
 SloSpecials.Views = {}
+SloSpecials.Layouts = {}
 
 SloSpecials.routers = {}
 SloSpecials.models = {}

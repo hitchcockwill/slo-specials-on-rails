@@ -73,14 +73,12 @@ nav ul {
 // Subnav styles
 nav ul.subnav {
   @include border-radius(0);
-  float: left;
   height: 30px;
   margin: -14px 0 0 160px;
   padding: 0;
 
   li {
     background-position: right 4px;
-    float: left;
     height: 27px;
     padding: 0;
     width: auto;

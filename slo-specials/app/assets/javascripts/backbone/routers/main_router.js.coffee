@@ -18,37 +18,58 @@ class SloSpecials.Routers.Main extends Backbone.Router
 
   routes:
     '' : 'index'
-    'daily' : 'deals'
-    'daily/:day' : 'deals'
-    'deals' : 'deals'
+    'deals/daily/:day' : 'deals'
+    'deals/daily' : 'deals'
     'deals/food' : 'food'
-    'food' : 'food'
-    'drinks' : 'drinks'
+    'deals/drinks' : 'drinks'
+    'deals' : 'deals'
     'venues/:id' : 'venue_by_id'
     'venues' : 'venues'
-
 
   index: ->
     SloSpecials.content.show new SloSpecials.Views.Index()
 
+  # ###################################################################
+  # Deals
+  # ###################################################################
+
+  # Deals init
+  deals_layout: (day) ->
+    layout =  new SloSpecials.Layouts.Deals
+      day: day
+    SloSpecials.content.show layout
+    layout.subnav.show new SloSpecials.Views.DealSubNav
+      day: day
+    layout
+
   deals: (day) -> 
+    deals_layout = @deals_layout(day)
+
     deals = new SloSpecials.Collections.Deals
       day: day
     deals.fetch
       success: ->
-        SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
+        deals_layout.content.show new SloSpecials.Views.AllDeals( collection: deals )
 
   food: ->
+    deals_layout = @deals_layout(day)
+
     deals = new SloSpecials.Collections.Food()
     deals.fetch
       success: ->
-        SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
+        deals_layout.content.show new SloSpecials.Views.AllDeals( collection: deals )
 
   drinks: ->
+    deals_layout = @deals_layout(day)
+
     deals = new SloSpecials.Collections.Drinks()
     deals.fetch
       success: ->
-        SloSpecials.content.show new SloSpecials.Views.AllDeals( collection: deals )
+        deals_layout.content.show new SloSpecials.Views.AllDeals( collection: deals )
+
+  # ###################################################################
+  # Venues
+  # ###################################################################
 
   venues: ->
     venues = new SloSpecials.Collections.Venues()

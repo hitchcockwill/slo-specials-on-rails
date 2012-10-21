@@ -10,13 +10,13 @@
       %a{ :href => "/places" }
         places
     %li
-      %a{ :href => "/drinks" }
+      %a{ :href => "/deals/drinks" }
         drinks
     %li
-      %a{ :href => "/food" }
+      %a{ :href => "/deals/food" }
         food
     %li
-      %a{ :href => "/daily/today", :class => "double" }
+      %a{ :href => "/deals/daily/today", :class => "double" }
         deals
         %br
           by day
