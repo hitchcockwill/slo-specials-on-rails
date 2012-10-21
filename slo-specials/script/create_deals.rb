@@ -616,7 +616,7 @@ placesArray = [
       "dollars" => "4",
       "cents" => ".20",
       "off"  => "",
-      "hours" => "4 =>20pm",
+      "hours" => "4:20pm",
       "kind" => "food",
       "days" => "Weekdays",
       "daysArray" => [false, true, true, true, true, true, false],
@@ -668,7 +668,7 @@ placesArray = [
       "dollars" => "20",
       "cents" => "",
       "off"  => "",
-      "hours" => "9 =>30am-2pm",
+      "hours" => "9:30am-2pm",
       "kind" => "drink",
       "days" => "Sundays",
       "daysArray" => [true, false, false, false, false, false, false],
@@ -734,7 +734,7 @@ placesArray = [
       "dollars" => "7",
       "cents" => ".00",
       "off"  => "",
-      "hours" => "11 =>30-2 =>30pm",
+      "hours" => "11:30-2:30pm",
       "kind" => "food",
       "days" => "Weekdays",
       "daysArray" => [false, true, true, true, true, true, false],
@@ -746,7 +746,7 @@ placesArray = [
       "dollars" => "2",
       "cents" => ".00",
       "off"  => "off",
-      "hours" => "4-6 =>30pm",
+      "hours" => "4-6:30pm",
       "kind" => "drink",
       "days" => "Weekdays",
       "daysArray" => [false, true, true, true, true, true, false],
@@ -956,7 +956,7 @@ placesArray = [
         "dollars" => "3",
         "cents" => ".00",
         "off"  => "",
-        "hours" => "3 =>30-6pm",
+        "hours" => "3:30-6pm",
         "kind" => "drink",
         "days" => "Daily",
         "daysArray" => [false, true, true, true, true, true, true],
@@ -968,7 +968,7 @@ placesArray = [
         "dollars" => "8",
         "cents" => ".00",
         "off"  => "",
-        "hours" => "3 =>30-6pm",
+        "hours" => "3:30-6pm",
         "kind" => "drink",
         "days" => "Daily",
         "daysArray" => [false, true, true, true, true, true, true],
@@ -1235,12 +1235,26 @@ def build_time(d)
   time
 end
 
+def pick_unit(u)
+  if u == "%"
+    return "percent_off"
+  elsif u == "for"
+    return "for"
+  else 
+    return "price"
+  end
+end
+
 def new_deal(venue, d)
   deal = venue.deals.new(
     :title => d["deal"],
     :kind => d["kind"],
-    :unit => if d["unit"] == "%" then "percent_off" else "price" end,
-    :price => if d["unit"] == "%" then d["dollars"] else get_price(d) end,
+    :unit => pick_unit(d["unit"]),
+    # :price => if d["unit"] == "%" then d["dollars"] else get_price(d) end,
+    :dollars => d["dollars"],
+    :cents => if d["cents"].length > 0 then d["cents"] else nil end,
+    :hours => d["hours"],
+    :days => d["days"],
     :time => build_time(d)
   )
   deal.save
