@@ -31,6 +31,8 @@ class SloSpecials.Routers.Main extends Backbone.Router
     'deals' : 'deals'
     'places/:id' : 'venue_by_id'
     'places' : 'venues'
+    'contact' : 'contact'
+    'about' : 'about'
 
   index: ->
     SloSpecials.content.show new SloSpecials.Views.Index()
@@ -100,4 +102,14 @@ class SloSpecials.Routers.Main extends Backbone.Router
     venue.fetch
       success: ->
         SloSpecials.content.show new SloSpecials.Views.Venue( model: venue )
+
+  # ###################################################################
+  # Support pages
+  # ###################################################################
+
+  contact: ->
+    SloSpecials.content.show new SloSpecials.Views.Contact()
+
+  about: ->
+    SloSpecials.content.show new SloSpecials.Views.About()
         

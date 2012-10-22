@@ -27,3 +27,7 @@ class SloSpecials.Views.Venue extends Backbone.Marionette.CompositeView
 
   appendHtml: (collectionView, itemView) ->
     collectionView.$('#deals-list').append(itemView.el)
+
+  onRender: ->
+    # Init plugins
+    @$el.find('select.sparkbox-custom').sbCustomSelect()

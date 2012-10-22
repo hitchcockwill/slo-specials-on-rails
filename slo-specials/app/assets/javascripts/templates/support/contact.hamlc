@@ -1,0 +1,24 @@
+%h1 Contact us
+.box1.clearfix.contactInfo.fL
+  %h2 At SLO Specials, feedback from the community is always appreciated.
+  %p
+    If you have any suggestions for the site, information on deals we missed, or just want to learn more about the project, please feel free to get in touch.
+  %p
+    To see some Frequently Asked Questions, visit our 
+    %a{:href => "/about"}
+      about page
+    .
+  %p
+    You can follow us on Twitter at 
+    %a{:href => "http://twitter.com/#!/SLOspecials", :target => "_blank"}
+      @SLOspecials
+    .
+  %p
+    To like this site on Facebook or share it with your friends on Twitter, visit the bottom of this page for links.
+.box1.fL
+  %form.form
+    %input{ :type => "text", :id => "name", :value => "name"}
+    %input{ :type => "text", :id => "email", :value => "email"}
+    %input{ :type => "text", :id => "subject", :value => "subject"}
+    %textarea{ :id => "message", :cols => "30", :rows="14", :value => "message"}
+    %input{ :type => "submit", :id => "submit"}

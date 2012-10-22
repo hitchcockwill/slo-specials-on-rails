@@ -22,8 +22,8 @@
           by day
   %ul{ :class => "rightnav" }
     %li
-      %a{ :href => "/about"}
+      %a{ :href => "/about", :class => "about"}
         about
     %li
-      %a{ :href => "/contact"}
+      %a{ :href => "/contact", :class => "contact"}
         contact

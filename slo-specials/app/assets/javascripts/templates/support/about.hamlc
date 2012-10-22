@@ -1,0 +1,41 @@
+%h1 About S.L.O. Specials
+.box1.content
+  %nav
+  %h2.target1
+    Frequently asked questions
+    %h3 I know this great deal in SLO, but don't see it on your site. How can I make sure it gets added?
+    %p
+      At SLO Specials, we have done our best to gather all of the best deals in SLO, but we will be the first to admit that we aren't perfect. If you know of a killer food or drink deal in San Luis Obispo, please let us know by visiting the 
+      %a{:href => "/contact"}
+        contact page 
+      and sending us a message so we can get it up on the site and let everyone know!
+    %h3 How do I make sure that I stay up to date with all of the new deals that you post?
+    %p
+      The easiest way to keep up with new deals or to hear about what's hot on SLO Specials is to follow us on Twitter, 
+      %a{:href => "http://twitter.com/#!/SLOspecials", :target => "_blank"}
+        @SLOspecials
+      . Don't forget to tell your friends about it.
+    %h3 I see a deal on the site that is inaccurate. How can I make sure it gets updated?
+    %p
+      We've done our best to make sure that all of the deals on this site are accurate and up to date. Unfortunately, promotions do change from time to time and we can't always keep up with all of them. We would hate to be giving you bad information on SLO Specials, so if you see something that doesn't seem right, please let us know by visiting the 
+      %a{:href => "/contact"}
+        contact page 
+      and shooting us an email.
+    %h3 Who do I talk to about advertising my business on your site?
+    %p 
+      In the interest of getting all of the best San Luis Obispo food and drink deals on SLO Specials, we have made it free for businesses to have their business information and deals posted on the site. If you would like to see your deals added to the site or would like to make updates to deals that are already up, please visit our 
+      %a{:href => "/contact"}
+        contact page  
+      and send us a message.
+    %p
+      For information on featured space, please see the advertising section below for more information on how to get featured space for your business on SLOspecials.com.
+
+  %h2.target3 About the creator
+  %p
+    The idea for SLO Specials was created by a fourth year Graphic Communication student at Cal Poly. As a student living on a tight budget, he learned quickly that finding the best food and drink specials is absolutely key for any student.
+  %p
+    Even after living in SLO for four years, he was still hearing about new food and drink deals almost weekly through word of mouth and by visiting restaurants and bars. It became apparent that there needed to be a better way for students to hear about these deals so the idea for SLO Specials was born. 
+  %p 
+    After three months, countless hours of development, and with the help of a few talented individuals, slospecials.com launched and became the single resource for San Luis Obispo food and drink deals.
+  %p
+    Thank you to everyone who was involved, and continues to be involved, in the SLO Specials project.

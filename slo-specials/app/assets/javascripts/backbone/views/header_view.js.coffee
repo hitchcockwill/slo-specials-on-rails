@@ -12,7 +12,7 @@ class SloSpecials.Views.Header extends Backbone.Marionette.ItemView
 
   activeLink: (target) ->
     
-    nav = @$el.find('ul.mainnav')
+    nav = @$el.find('ul')
     nav.children().removeClass('active')
     nav.find('li.'+target).addClass('active')
     console.log 'called active links', target, nav.find('li.'+target)

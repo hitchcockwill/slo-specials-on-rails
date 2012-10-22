@@ -1,6 +1,9 @@
 #busInfo.box1.fL.clearfix
   .busLogo
-    %h1= @name
+    - if @logo
+      %img{:class => "logo", :src => "#{@logo.url}"}
+    - else
+      %h1= @name
   %ul
     %li Type: 
       %span= @tags
@@ -19,7 +22,37 @@
       Some deals
 .clr
 .dealswrap.box1.clearfix
-  %h2.fL.cta1 All Deals at #{@name}
-  #sorterWrap.fR
+  %h2.fL.cta1 All Deals
+  #sorterWrap.fR.clearfix
+    %a{:href => "", :class => "reverse fR"}
+      reverse
+    %h3.cta2.fR 
+      Order
+    %div.drop.filter.fR.clearfix
+      %select.sparkbox-custom
+        %option{:value => "all", :class => "all"}
+          %a{:href => ""}
+            view all deals
+        %option{:value => "foodDeals", :class => "foodDeals"}
+          %a{:href => ""}
+            view food deals
+        %option{:value => "drinkDeals", :class => "drinkDeals"}
+          %a{:href => ""}
+            view drink deals
+    %h3.cta2.fR
+      Filter
+    %div.drop.sort.fR.clearfix
+      %select.sparkbox-custom
+        %option{:value => "restaurant", :class => "restaurant"}
+          %a{:href => ""}
+            restaurant
+        %option{:value => "price", :class => "price"}
+          %a{:href => ""}
+            price
+        %option{:value => "dealName", :class => "dealName"}
+          %a{:href => ""}
+            deal name
+    %h3.cta2.fR
+      Sort by
   .clr
   #deals-list.clearfix
