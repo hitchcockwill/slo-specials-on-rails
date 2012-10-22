@@ -38,6 +38,7 @@ class SloSpecials.Views.AllDeals extends Backbone.Marionette.CompositeView
 
   events: 
     'click ul.radio li' : 'selectRadio'
+    'click a.reverse' : 'reverse'
 
   initIsotope: ->
     @$el.find('#deal-list').isotope
@@ -50,6 +51,13 @@ class SloSpecials.Views.AllDeals extends Backbone.Marionette.CompositeView
           $elem.find('.name').text()
         venue: ($elem) ->
           $elem.find('.venue').text()
+    
+    @sortAscending = true
+
+  reverse: (evt) ->
+    if evt then evt.preventDefault()
+    @sortAscending = if @sortAscending is true then false else true
+    @$el.find('#deal-list').isotope( sortAscending: @sortAscending )
 
   selectRadio: (evt) ->
     if evt then evt.preventDefault()
