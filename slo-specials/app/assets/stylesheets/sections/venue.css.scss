@@ -4,19 +4,20 @@
     height: 280px;
     width: 288px;
     #busLogo {background-repeat: no-repeat;}
-  }
-  ul {
-    padding: 0;
-    font-family: "Arvo", helvetica, arial, sans-serif;
-    font-size: 12px;
-    li {
-      margin: 8px 0 0;
-      font-weight: bold;
+    ul {
+      padding: 0;
+      font-family: "Arvo", helvetica, arial, sans-serif;
+      font-size: 12px;
+      li {
+        margin: 8px 0 0;
+        font-weight: bold;
+      }
+      span {
+        font-weight: normal;
+      }
     }
-    span {
-      font-weight: normal;
-    }
   }
+
 
   #dailyDeals {
     width: 459px;
