@@ -1,53 +1,53 @@
 %ul.fL
   %li.first.fL
     %h3.special
-      %a{ :href => "/food" }
+      %a{ :href => "/deals/food" }
         Food
     %ul
       %li
-        %a{ :href => "/food" }
+        %a{ :href => "/deals/food" }
           Today&acute;s Deals
       %li
-        %a{ :href => "food/all" }
+        %a{ :href => "deals/food" }
           See all deals
     %h3.special
-      %a{:href => "/drinks"}
+      %a{:href => "/deals/drinks"}
         Drinks
     %ul
       %li
-        %a{:href => "/drinks"}
+        %a{:href => "/deals/drinks"}
           Today&acute;s Deals
       %li
-        %a{:href => "/drinks/all"}
+        %a{:href => "/deals/drinks"}
           See all deals
   %li.fL
     %h3.special
-      %a{:href => "/deals-by-day"}
+      %a{:href => "/deals/daily"}
         Deals by Day
     %ul
       %li
-        %a{:href => "/deals-by-day"}
+        %a{:href => "/deals/daily"}
           Today&acute; Deals
       %li
-        %a{:href => "/deals-by-day/sunday"}
+        %a{:href => "/deals/daily/sunday"}
           Sunday
       %li
-        %a{:href => "/deals-by-day/monday"}
+        %a{:href => "/deals/daily/monday"}
           Monday
       %li
-        %a{:href => "/deals-by-day/tuesday"}
+        %a{:href => "/deals/daily/tuesday"}
           Tuesday
       %li
-        %a{:href => "/deals-by-day/wednesday"}
+        %a{:href => "/deals/daily/wednesday"}
           Wednesday
       %li
-        %a{:href => "/deals-by-day/thursday"}
+        %a{:href => "/deals/daily/thursday"}
           Thursday
       %li
-        %a{:href => "/deals-by-day/friday"}
+        %a{:href => "/deals/daily/friday"}
           Friday
       %li
-        %a{:href => "/deals-by-day/saturday"}
+        %a{:href => "/deals/daily/saturday"}
           Saturday
 .social.fL
   %h3.special
@@ -56,16 +56,16 @@
   .twitter.clearfix
     %h4.fL on Twitter
     %a{:href => "/"}
-      Twitter links go here
+      / Twitter links go here
   .facebook.clearfix
     %h4.fL on Facebook
     %a{:href => "/"}
-      Facebook links here
+      / Facebook links here
   %h3.special
     %a
       Follow us on Twitter
   %a{:href => "/"}
-    more twitter stuff
+    / more twitter stuff
 #footerContact.fL
   %h2 
     Want to tell us about more deals?

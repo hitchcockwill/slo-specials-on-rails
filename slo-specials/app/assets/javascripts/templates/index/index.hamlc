@@ -1,21 +1,12 @@
 #todaysDeals.flexslider.box1.clearfix
-  %h2.cta1
+  %h2.cta1.fL
     Today&acute;s Deals
-  #leftNav.slidernav.fL
+  %a{:href => "/deals/daily/today", :class => "fR"}
+    View all of today&acute;s deals>>
+  / #leftNav.slidernav.fL
   #todaysDealsWrap.fL
     %ul.dealList.clearfix
-      %li.dealTab.box2
-        .dealStripe
-        .dealData
-          %h4.row
-            %span $
-            1
-            %span .00
-          %h3.row Pints
-          %h5 SLO Brew
-          %h6 tuesdays
-            %span 9&ndash;close
-  #rightNav.slidernav.fL
+  / #rightNav.slidernav.fL
   .clearfix
 #newsFeed.box1.fL
   %p

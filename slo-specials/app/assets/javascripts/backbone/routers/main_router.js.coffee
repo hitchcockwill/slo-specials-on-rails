@@ -35,7 +35,12 @@ class SloSpecials.Routers.Main extends Backbone.Router
     'about' : 'about'
 
   index: ->
-    SloSpecials.content.show new SloSpecials.Views.Index()
+    deals = new SloSpecials.Collections.Deals
+      day: "today"
+    deals.fetch
+      success: ->
+        SloSpecials.content.show new SloSpecials.Views.Index
+          collection: deals
 
   # ###################################################################
   # Deals

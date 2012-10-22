@@ -7,7 +7,12 @@
     padding: 24px 0;
     width: 100%;
     h2{ margin-left: 54px; }
-    > a{ margin-right: 54px; }
+    > a { 
+      margin-right: 54px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: $dark-gray;
+    }
     ul.dealList {
       overflow: hidden;
       width: 9999px;
@@ -26,12 +31,13 @@
     }
   } // end #todaysDeals
   #todaysDealsWrap {
-    width: 858px;
+    width: 866px;
     overflow: hidden;
+    margin-left: 44px;
   }
   #newsFeed {
-    margin: 14px 14px 0 52px;
-    width: 478px;
+    // margin: 14px 14px 0 52px;
+    // width: 478px;
     p {
      font-style: italic;
      font-size: 16px;
