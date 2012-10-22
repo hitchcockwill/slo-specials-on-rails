@@ -1,6 +1,6 @@
 class SloSpecials.Views.Deal extends Backbone.Marionette.ItemView
   template: JST['deals/deal']
-  className: "clearfix fL dealTab box2"
+  className: "clearfix dealTab box2"
   tagName: "li"
 
   initialize: ->
@@ -31,3 +31,37 @@ class SloSpecials.Views.AllDeals extends Backbone.Marionette.CompositeView
   onRender: ->
     # Init plugins
     @$el.find('select.sparkbox-custom').sbCustomSelect()
+    @initIsotope()
+
+  onShow: ->
+    @initIsotope()
+
+  events: 
+    'click ul.radio li' : 'selectRadio'
+
+  initIsotope: ->
+    @$el.find('#deal-list').isotope
+      itemSelector: '.dealTab'
+      layoutMode: 'fitRows'
+      getSortData:
+        price: ($elem) ->
+          parseInt($elem.find('.dollars').text())
+        name: ($elem) ->
+          $elem.find('.name').text()
+        venue: ($elem) ->
+          $elem.find('.venue').text()
+
+  selectRadio: (evt) ->
+    if evt then evt.preventDefault()
+    $target = $(evt.target)
+    if $target.is('a') then $target = $target.parent()
+
+    unless $target.hasClass('active')
+      $target.siblings().removeClass('active')
+      $target.addClass('active') 
+
+    @sortIsotope($target.attr('data-sorter'))
+
+  sortIsotope: (attribute) ->
+    @$el.find('#deal-list').isotope sortBy: attribute
+

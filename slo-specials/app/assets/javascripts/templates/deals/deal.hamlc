@@ -18,7 +18,7 @@
         %span.dollars= @dollars
         %span %
         %span.off off
-  %h3.row= @title
-  %h5= @venue.name
+  %h3.row.name= @title
+  %h5.venue= @venue.name
   %h6= @days
     %span= @hours
