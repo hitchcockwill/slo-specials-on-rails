@@ -1,11 +1,11 @@
 .dealsPage.box1.clearfix
   %h2.fL.cta1= @title
   #sorterWrap.fR.clearfix
+    %a{:href => "", :class => "reverse fR"}
+      reverse
     %h3.cta2.fR 
       Order
-      %a{:href => ""}
-        reverse
-    %form.filter.fR
+    %div.drop.filter.fR.clearfix
       %select.sparkbox-custom
         %option{:value => "all", :class => "all"}
           %a{:href => ""}
@@ -18,7 +18,7 @@
             view drink deals
     %h3.cta2.fR
       Filter
-    %form.sort.fR
+    %div.drop.sort.fR.clearfix
       %select.sparkbox-custom
         %option{:value => "restaurant", :class => "restaurant"}
           %a{:href => ""}
